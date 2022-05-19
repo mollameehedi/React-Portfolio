@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+.header{
+  width: 100%;
+  height: 100vh;
+  background: url('/public/images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar{
+  position:fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100px;
+  background: #2D394B;
+  z-index: 44;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar_container{
   display: flex;
-  flex-direction: column;
+  height: 100px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+.navbar_left_logo img{
+  width: 110px;
+}
+.navbar_right{
+  display: flex;
+  list-style-type: none;
+}
+.navbar_right li a{
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 15px;
+  text-decoration:none;
+}
+
+/* helpers  */
+.container{
+  width: 1200px;
+  margin: 0 auto;
+}
+/* grid */
+.row{
+  display: flex;
+  width: 100%;
+}
+.col-6{
+  width: 50%;
+}
+
+/* common css */
+
+
+/* header */
+.header__content{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.header__ul{
+  list-style-type: none;
+  display: flex;
+}
+.header__ul li{
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ff4a57;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 15px;
+}
+.header__ul li:first-child{
+  margin-left: 0px;
+}
+.header__section h1{
+  font-size: 57px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.header__section p{
+  font-size: 26px;
+  font-weight: 300;
+  line-height:40px;
+  margin-bottom:50px
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn{
+  outline: none;
+  border: none;
+  color: white;
+  text-decoration:none;
+}
+.btn-outline{
+    border: 2px solid #ff4a57;
+    border-radius: 50px;
+    padding: 13px 40px;
+} 
+.btn-smart{
+    background:  #ff4a57;
+    border-radius: 50px;
+    padding: 13px 40px;
+}
+.btn-smart .play{
+  font-size: 25px;
+  padding-top:25px;
+}
+.header__img{
+  padding: 0 30px;
+  margin-top: 150px;
 }
