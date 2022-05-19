@@ -2,6 +2,11 @@ import React from 'react'
 import {FaFacebookF,FaTwitter,FaPinterestP,FaInstagram,FaBehance,FaPlay} from 'react-icons/fa';
 
 const Banner = () => {
+    const [state] = React.useState({
+        title:"I am MollaMeeHedi",
+         text:"I'm MollaMeehedi web developer with long time experience in this field.",
+         image:"images/man-01.png"
+    })
   return (
     <header className="header">
         <div className='container'>
@@ -16,8 +21,8 @@ const Banner = () => {
                                         <li><FaInstagram/></li>
                                         <li><FaBehance/></li>
                                     </ul>
-                                    <h1>I am MollaMeeHedi</h1>
-                                    <p>I'm MollaMeehedi web developer with long time experience in this field.</p>
+                                    <h1>{state.title}</h1>
+                                    <p>{state.text}</p>
                                     <div className='header_-buttons'>
                                         <a href='' className='btn btn-outline'>My Portfolio</a>
                                         &nbsp;&nbsp;&nbsp;
@@ -31,7 +36,7 @@ const Banner = () => {
                     </div>
                     <div className='col-6'>
                         <div className='header__img'>
-                            <img src='images/man-01.png'  alt='banner.png'/>
+                            <img src={state.image}  alt='banner.png'/>
                         </div>
                     </div>
                 </div>

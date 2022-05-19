@@ -5,6 +5,7 @@
 }
 body{
   font-family: 'Poppins', sans-serif;
+  background: #1F2235;
 }
 .header{
   width: 100%;
@@ -50,13 +51,21 @@ body{
   width: 1200px;
   margin: 0 auto;
 }
+.bgMain{
+  background:#1f2235;
+}
+
 /* grid */
 .row{
   display: flex;
   width: 100%;
+  flex-wrap: wrap;
 }
 .col-6{
   width: 50%;
+}
+.col-4{
+  width: 33.33333333333333333%;
 }
 
 /* common css */
@@ -122,4 +131,57 @@ body{
 .header__img{
   padding: 0 30px;
   margin-top: 150px;
+}
+
+
+/* services */
+.services{
+  padding: 100px 0px;
+  color: white;
+}
+
+.common {
+  width: 33.333333333333333333%;
+  margin: 0 auto;
+  text-align: center;
+}
+.common .heading{
+  margin-bottom:20px ;
+  color: #ff4a57;
+  font-weight: 500;
+  font-size: 16px;
+}
+.common .mainHeader{
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.common .mainContent{
+    font-size: 16px;
+    color: #dfdfdf;
+}
+.common .commonBorder{
+  background: #ff4a57;
+  height: 3px;
+  width: 100px;
+  margin: 30px auto;
+}
+.service__box{
+  padding: 40px;
+  background-color: #23263a;
+  color: white;
+  margin: 20px;
+}
+.commonIcon{
+  font-size: 40px;
+  color: #ff4a57;
+  margin-bottom: 15px;
+}
+.service__box_header{
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.service__box_p{
+  font-size: 14px;
+  color: #dfdfdf;
 }
