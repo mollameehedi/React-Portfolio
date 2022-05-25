@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import {FaAlignJustify} from 'react-icons/fa'
 
 const Nav = () => {
-    const[state,setState] = useState(false)
+    const[state,setState] = useState(true)
   return (
     <nav className='navbar'>
         <div className='container'>

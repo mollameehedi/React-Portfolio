@@ -15,11 +15,11 @@ const Banner = () => {
                         <div className='header__content'>
                             <div className='header__section'>
                                 <ul className='header__ul'>
-                                        <li><FaFacebookF/></li>
-                                        <li><FaTwitter/></li>
-                                        <li><FaPinterestP/></li>
-                                        <li><FaInstagram/></li>
-                                        <li><FaBehance/></li>
+                                        <li><a href='' terget='_blank'><FaFacebookF/></a></li>
+                                        <li><a href='' terget='_blank'><FaTwitter/></a></li>
+                                        <li><a href='' terget='_blank'><FaPinterestP/></a></li>
+                                        <li><a href='' terget='_blank'><FaInstagram/></a></li>
+                                        <li><a href='' terget='_blank'><FaBehance/></a></li>
                                     </ul>
                                     <h1>{state.title}</h1>
                                     <p>{state.text}</p>
