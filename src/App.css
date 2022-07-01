@@ -5,6 +5,8 @@
 }
 body{
   font-family: 'Poppins', sans-serif;
+  background: #1F2235;
+  color: white;
 }
 .header{
   width: 100%;
@@ -50,18 +52,34 @@ body{
   width: 1200px;
   margin: 0 auto;
 }
+.bgMain{
+  background:#1f2235;
+}
+
 /* grid */
 .row{
   display: flex;
   width: 100%;
+  flex-wrap: wrap;
 }
 .col-6{
   width: 50%;
 }
+.col-4{
+  width: 33.33333333333333333%;
+}
 
 /* common css */
 
-
+.h-650{
+height: 650px;
+}
+.alignItem{
+  align-items: center;
+}
+.justifyCenter{
+  justify-content: center;
+}
 /* header */
 .header__content{
   display: flex;
@@ -75,14 +93,35 @@ body{
   display: flex;
 }
 .header__ul li{
+  margin: 0 15px;
+  transition: all linear .3s;
+
+}
+.header__ul li a{
   width: 50px;
   height: 50px;
   border: 1px solid #ff4a57;
-  border-radius: 50%;
-  display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 15px;
+  border-radius: 50%;
+  display: flex;
+ color: white;
+}
+.header__ul li a:hover{
+  background: #ff4a57;
+  color: white;
+  border: 1px solid #ff4a57;
+}
+
+.header .header_-buttons .btn{
+  border: 1px solid #ff4a57;
+}
+.header .header_-buttons .btn:hover{
+  background: #ff4a57;
+  border: 1px solid #ff4a57;
+}
+.header .header_-buttons .btn-smart:hover{
+  background: transparent;
 }
 .header__ul li:first-child{
   margin-left: 0px;
@@ -122,4 +161,216 @@ body{
 .header__img{
   padding: 0 30px;
   margin-top: 150px;
+}
+
+
+/* services */
+.services{
+  padding: 100px 0px;
+  color: white;
+}
+
+.common {
+  width: 33.333333333333333333%;
+  margin: 0 auto;
+  text-align: center;
+}
+.common .heading{
+  margin-bottom:20px ;
+  color: #ff4a57;
+  font-weight: 500;
+  font-size: 16px;
+}
+.common .mainHeader{
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.common .mainContent{
+    font-size: 16px;
+    color: #dfdfdf;
+}
+.common .commonBorder{
+  background: #ff4a57;
+  height: 3px;
+  width: 100px;
+  margin: 30px auto;
+  
+}
+.service__box{
+  padding: 40px;
+  background-color: #23263a;
+  color: white;
+  margin: 20px;
+  transition: all 0.3s linear ;
+}
+.service__box:hover{
+  background: #ff4a57;
+}
+.service__box:hover .commonIcon{
+  color: white;
+}
+.commonIcon{
+  font-size: 40px;
+  color: #ff4a57;
+  margin-bottom: 15px;
+}
+.service__box_header{
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.service__box_p{
+  font-size: 14px;
+  color: #dfdfdf;
+}
+.about{
+  background: #23263a;
+  width: 100%;
+  padding: 100px 0px;
+  color: white;
+}
+.about__img{
+  padding: 30px;
+}
+
+
+.about__info h1{
+  margin-bottom: 30px;
+}
+.about__info p{
+  font-size: 14px;
+}
+.about__info .about__info__p1{
+  padding-bottom: 20px;
+}
+.about__info__contacts{
+  margin-top: 20px;
+}
+.about__info__contacts strong{
+  color: #ff4a57;
+}
+.about__info__contacts p{
+  margin-top: 3px;
+}
+.about__info__contacts .col-6{
+  margin:10px 0px;
+}
+.prices{
+  padding: 100px 0px;
+  width: 100%;
+}
+.price{
+  background: #23263a;
+  padding: 25px;
+  border-radius: 8px;
+  margin: 35px 20px;
+  text-align: center;
+}
+.priceHeading{
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.price__rs{
+  font-size: 70px;
+  font-weight: 300px;
+  margin-bottom: 15px;
+}
+.price__rs span{
+  font-size: 20px
+}
+.price ul {
+  list-style-type: none;
+}
+.price ul li{
+  margin: 5px 0px;
+  border-bottom: 1px solid #3c3c3c;
+  font-size: 14px;
+  padding: 15px 0px ;
+}
+
+.package_center .col-4:nth-child(2) .price{
+  border: 2px solid #ff4a57;
+}
+
+.price__btn{
+  margin-top: 40px;
+}
+
+/* contact */
+.contact{
+  padding: 100px 0px;
+  text-align: center;
+  background: #23263a;
+}
+.contactSectionLogo img{
+  margin: 0px auto;
+  display: inline-block;
+  cursor: pointer;
+}
+.contact p{
+  color:white;
+  margin: 20px auto;
+}
+.aboutCirles ul{
+  display: flex;
+  width: 100%;
+  list-style-type: none;
+  justify-content: center;
+}
+.aboutCirles ul li{
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: #1f2235;
+  margin: 0 12px;
+}
+.aboutCirles ul li:hover {
+  background: #ff4a57;
+  cursor: pointer;
+}
+.toggle{
+  position: fixed;
+  top:50px;
+  right: 25px;
+  cursor: pointer;
+  color: white;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  justify-content: center;
+  display: none;
+}
+
+@media(max-width: 765px){
+  .container{
+    width: 100%;
+    padding: 0px 50px;
+  }
+  .col-6{
+    width: 100%;
+  }
+  .navbar_right{
+    flex-direction: column;
+    width: 100%;
+    margin-top: 440px;
+    background: #2D394B;
+  }
+  .navbar_right li{
+    padding: 15px 0px;
+    display: block;
+  }
+  .header__ul {
+    padding-top: 120px;
+}
+  .toggle{
+    display: flex;
+  }
+
 }
