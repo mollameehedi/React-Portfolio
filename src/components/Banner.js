@@ -24,7 +24,7 @@ const Banner = () => {
                                     <h1>{state.title}</h1>
                                     <p>{state.text}</p>
                                     <div className='header_-buttons'>
-                                        <a href='' className='btn btn-outline'>My Portfolio</a>
+                                        <a href='' className='btn btn-outline'>My Portfolios</a>
                                         &nbsp;&nbsp;&nbsp;
                                         <a href='' className='btn btn-smart'>
                                             <FaPlay/>
